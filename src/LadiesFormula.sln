@@ -5,11 +5,23 @@ VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadiesFormula", "LadiesFormula\LadiesFormula.csproj", "{C2023A3E-C86B-45E0-A6A4-EAB3B9840AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadiesFormula.DataAccess", "LadiesFormula.DataAccess\LadiesFormula.DataAccess.csproj", "{B64A1706-2A83-4E34-A6F2-0FF252F1E70A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadiesFormula.DataAccess", "LadiesFormula.DataAccess\LadiesFormula.DataAccess.csproj", "{B64A1706-2A83-4E34-A6F2-0FF252F1E70A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadiesFormula.Domain.Models", "LadiesFormula.Domain.Models\LadiesFormula.Domain.Models.csproj", "{F51CD57B-F1BA-43EC-BDC1-6B1960936973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadiesFormula.Domain.Models", "LadiesFormula.Domain.Models\LadiesFormula.Domain.Models.csproj", "{F51CD57B-F1BA-43EC-BDC1-6B1960936973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadiesFormula.Business", "LadiesFormula.Business\LadiesFormula.Business.csproj", "{5F8935B3-9600-4735-A2AF-9BBD11B63624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadiesFormula.Business", "LadiesFormula.Business\LadiesFormula.Business.csproj", "{5F8935B3-9600-4735-A2AF-9BBD11B63624}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadiesFormula.Infrastructure", "LadiesFormula.Infrastructure\LadiesFormula.Infrastructure.csproj", "{36D21B5A-D834-48C7-808F-6EB0974DB3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadiesFormula.Statistics", "LadiesFormula.Statistics\LadiesFormula.Statistics.csproj", "{DC5BC185-011B-41E8-A2AC-A0FD81386385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{074223D8-4190-41F0-A2C8-B19951B8CEFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{23718315-A14C-40D3-B221-BFFDEB186681}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{28B0881D-4E24-466C-A8FB-AEFFD62042B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Measurment", "Measurment", "{214BBE17-4AB6-4ED9-A554-741BF3EFA555}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +45,23 @@ Global
 		{5F8935B3-9600-4735-A2AF-9BBD11B63624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F8935B3-9600-4735-A2AF-9BBD11B63624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F8935B3-9600-4735-A2AF-9BBD11B63624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D21B5A-D834-48C7-808F-6EB0974DB3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D21B5A-D834-48C7-808F-6EB0974DB3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D21B5A-D834-48C7-808F-6EB0974DB3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D21B5A-D834-48C7-808F-6EB0974DB3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5BC185-011B-41E8-A2AC-A0FD81386385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5BC185-011B-41E8-A2AC-A0FD81386385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5BC185-011B-41E8-A2AC-A0FD81386385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5BC185-011B-41E8-A2AC-A0FD81386385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B64A1706-2A83-4E34-A6F2-0FF252F1E70A} = {23718315-A14C-40D3-B221-BFFDEB186681}
+		{F51CD57B-F1BA-43EC-BDC1-6B1960936973} = {28B0881D-4E24-466C-A8FB-AEFFD62042B2}
+		{5F8935B3-9600-4735-A2AF-9BBD11B63624} = {074223D8-4190-41F0-A2C8-B19951B8CEFA}
+		{DC5BC185-011B-41E8-A2AC-A0FD81386385} = {214BBE17-4AB6-4ED9-A554-741BF3EFA555}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5641BEED-56D1-4B05-A7E9-DE7AD33BC7F2}

@@ -1,5 +1,3 @@
-using System;
-
 namespace LadiesFormula.Models
 {
     public class ErrorViewModel

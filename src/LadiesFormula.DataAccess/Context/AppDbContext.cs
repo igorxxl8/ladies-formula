@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace LadiesFormula.DataAccess
+namespace LadiesFormula.DataAccess.Context
 {
     public class AppDbContext : DbContext
     {
